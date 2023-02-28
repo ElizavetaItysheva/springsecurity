@@ -20,6 +20,7 @@ public class SecurityConfigNew extends WebSecurityConfigurerAdapter {
 auth.jdbcAuthentication().dataSource(dataSource);
     }
 
+
     @Override
     protected void configure( HttpSecurity http ) throws Exception {
         http.authorizeRequests()
